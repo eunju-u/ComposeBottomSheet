@@ -1,7 +1,8 @@
-package com.example.draggablebottomsheet
+package com.sheet.draggablebottomsheet
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.draggablebottomsheet.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

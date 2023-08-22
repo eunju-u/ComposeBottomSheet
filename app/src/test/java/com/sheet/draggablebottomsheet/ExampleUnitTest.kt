@@ -1,4 +1,4 @@
-package com.example.draggablebottomsheet
+package com.sheet.draggablebottomsheet
 
 import org.junit.Test
 
