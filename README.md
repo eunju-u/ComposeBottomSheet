@@ -44,40 +44,78 @@ Step 2. Add the dependency
         }
 
 # Usage
++ DraggableBotoomSheet parameters
+  
+      /**
+      * @param direction The direction of the sheet.
+      * @param isMaxWidth determines the sheet's width will fill the entire screen
+      * or will be set to a specified value for the width.
+      * only used with the "SwipeBottomSheetDirection.BOTTOM" option.
+      * @param useOffset in HalfExpanded, determines to use an offset when dragging downwards.
+      * @param bottomSheetMaxWidth determines the sheet's width will be set to the specified width value
+      * or the default maximum width of 640.dp
+      * only used with the "SwipeBottomSheetDirection.BOTTOM" option and "isMaxWidth" is false
+      * @param scrimColor The color of the scrim that is applied to the rest of the screen when the bottom sheet is visible
+      * @param surfaceRoundedCornerShape The RoundedCornerShape of the sheet.
+      * @param onDismiss event to dismiss the sheet
+      * @param sheetBar The sheetBar of the bottom sheet.
+      * if the sheetBar is not specified, the default bar is used.
+      * @param content The content of the sheet.
+      *
+      * **/
+      @Composable
+      fun DraggableBottomSheet(
+          direction: SwipeBottomSheetDirection = SwipeBottomSheetDirection.BOTTOM,
+          isMaxWidth: Boolean = false,
+          useOffset: Boolean = false,
+          bottomSheetMaxWidth: Dp = MaxSheetWidth,
+          scrimColor: Color = MaterialTheme.colors.onSurface.copy(alpha = 0.32f),
+          surfaceRoundedCornerShape: RoundedCornerShape = RoundedCornerShape(
+              topStart = 0.dp,
+              topEnd = 0.dp
+          ),
+          onDismiss: () -> Unit,
+          sheetBar: (@Composable (modifier: Modifier) -> Unit)? = null,
+         content: @Composable () -> Unit
+      ) {
+        }
 
-    var isShowBottomSheet by remember { mutableStateOf(false) }
+      
++ how to use
 
-    BackHandler(enabled = isShowBottomSheet) {
-        isShowBottomSheet = false
-    }
+      var isShowBottomSheet by remember { mutableStateOf(false) }
 
-    if (isShowBottomSheet) {
-        DraggableBottomSheet(
-            direction = SwipeBottomSheetDirection.BOTTOM,
-            surfaceRoundedCornerShape = RoundedCornerShape(
-                topStart = 24.dp,
-                topEnd = 24.dp
-            ),
-            onDismiss = {
-                isShowBottomSheet = false
-            },
-            content = {
-                Column(
-                    modifier = Modifier
-                        .fillMaxHeight()
-                        .padding(PaddingValues(start = 20.dp, end = 20.dp, bottom = 15.dp)),
-                    verticalArrangement = Arrangement.SpaceBetween
-                ) {
-                    Column(
-                        modifier = Modifier
-                            .fillMaxSize().background(color = Color.Yellow),
-                        horizontalAlignment = Alignment.CenterHorizontally
-                    ) {
-
+      BackHandler(enabled = isShowBottomSheet) {
+          isShowBottomSheet = false
+      }
+  
+      if (isShowBottomSheet) {
+          DraggableBottomSheet(
+              direction = SwipeBottomSheetDirection.BOTTOM,
+              surfaceRoundedCornerShape = RoundedCornerShape(
+                  topStart = 24.dp,
+                  topEnd = 24.dp
+              ),
+              onDismiss = {
+                  isShowBottomSheet = false
+              },
+              content = {
+                  Column(
+                      modifier = Modifier
+                          .fillMaxHeight()
+                          .padding(PaddingValues(start = 20.dp, end = 20.dp, bottom = 15.dp)),
+                      verticalArrangement = Arrangement.SpaceBetween
+                  ) {
+                      Column(
+                          modifier = Modifier
+                              .fillMaxSize().background(color = Color.Yellow),
+                          horizontalAlignment = Alignment.CenterHorizontally
+                      ) {
+  
                     }
                 }
             })
-    }
+      }
     
 # Project result
 
