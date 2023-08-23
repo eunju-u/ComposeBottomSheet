@@ -35,8 +35,6 @@ enum class SwipeBottomSheetDirection {
 val MaxSheetWidth = 640.dp
 
 /**
- *  * it is essential to specify the Modifier.fillMaxHeight() for the content.
- *
  * @param direction The direction of the sheet.
  * @param isMaxWidth determines the sheet's width will fill the entire screen
  * or will be set to a specified value for the width.
