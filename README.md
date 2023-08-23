@@ -84,13 +84,15 @@ Step 2. Add the dependency
 BottomSheet
 
 
-https://github.com/eunju-u/dddddd/assets/55544506/80621a72-a90a-46d2-bcf0-fcb5262dcd96
+https://github.com/eunju-u/DraggableBottomSheet/assets/55544506/ab7b8893-71f5-4add-926b-912f6a015f83
+
 
 
 RightSheet
 
 
-https://github.com/eunju-u/dddddd/assets/55544506/d4359edf-8c3b-4553-8ef8-a25b2b05d72b
+https://github.com/eunju-u/DraggableBottomSheet/assets/55544506/6d02c021-dfd8-4d9b-89f4-44d32c60ec2e
+
 
 # License
 
