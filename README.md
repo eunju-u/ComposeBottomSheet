@@ -1,5 +1,5 @@
 # DraggableBottomSheet
-<img src = "https://github.com/eunju-u/dddddd/assets/55544506/a2e2ae91-67a8-4924-99ce-7806b548f6eb" width="40%" height="40%"> ..... <img src = "https://github.com/eunju-u/dddddd/assets/55544506/e493f845-2325-484a-b21f-6869ad451ad9" width="40%" height="40%"> 
+<img src = "https://github.com/eunju-u/DraggableBottomSheet/assets/55544506/a3af6a8c-d68f-4339-bbc9-75072e4f92d6" width="40%" height="40%"> ..... <img src = "https://github.com/eunju-u/DraggableBottomSheet/assets/55544506/eb36df65-9542-468f-b0b4-e845fca0a137" width="40%" height="40%"> 
 
 
 # Description
